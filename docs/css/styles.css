@@ -10,6 +10,21 @@ body {
   width: 1180px;
   margin: 0 auto; }
 
+.description-item .icon {
+  margin-bottom: 20px; }
+
+.description-item .title {
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold; }
+
+.description-item .text {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #6c6c6c; }
+
 .section-header {
   color: #ffffff;
   background: url("../img/bg-header.png") no-repeat 50% 50%;
@@ -141,5 +156,13 @@ body {
   .section-promo-1__video img {
     width: 100%;
     height: auto; }
+
+.section-promo-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 86px;
+  margin-top: 120px;
+  border-top: 1px solid #e2e2e2; }
 
 /*# sourceMappingURL=styles.css.map */
