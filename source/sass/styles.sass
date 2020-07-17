@@ -1,0 +1,41 @@
+// === Mixins ===
+@mixin font-lato
+    font-family: 'Lato', sans-serif
+@mixin font-montserrat
+    font-family: 'Montserrat', sans-serif
+// === / Mixins ===
+
+// === Variables ===
+$color-white: #ffffff
+// === / Variables ===
+
+// === Common ===
+body
+    @include font-lato
+
+// === header ===
+.section-header
+    color: #ffffff
+    background: url('../img/bg-header.png') no-repeat 50% 50%;
+    background-size: cover
+    position: relative
+    
+    .section-inner
+        
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba(20, 39, 41, .6) 
+    &-logo
+    &-content
+    &-wrapper
+        &__title
+        &__subtitle
+        &__form
+            &-input
+            &-button
