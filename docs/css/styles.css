@@ -159,4 +159,81 @@ body {
   .section-promo-2 .description-item + .description-item {
     margin-left: 40px; }
 
+.section-founder {
+  background-color: #f6fafd;
+  padding-top: 34px; }
+  .section-founder .section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .section-founder__img {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+  .section-founder__content {
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding-left: 50px; }
+    .section-founder__content-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      line-height: 40px; }
+    .section-founder__content-name {
+      padding-top: 35px;
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: bold; }
+    .section-founder__content-post {
+      font-size: 20px;
+      line-height: 29px; }
+
+.section-plans {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  text-align: center; }
+  .section-plans__title {
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: bold; }
+  .section-plans__subtitle {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    width: 50%;
+    margin: 0 auto 80px; }
+  .section-plans__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .section-plans__list-item {
+      -ms-flex-preferred-size: 370px;
+      flex-basis: 370px;
+      padding: 60px 45px; }
+      .section-plans__list-item_title {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 26px; }
+      .section-plans__list-item_price {
+        margin-bottom: 26px; }
+        .section-plans__list-item_price .prefix {
+          font-size: 72px;
+          line-height: 86px;
+          font-weight: bold;
+          color: #fe4fa7; }
+        .section-plans__list-item_price .postfix {
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: bold; }
+      .section-plans__list-item_description {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        margin-bottom: 40px; }
+      .section-plans__list-item.active {
+        background-color: #f6fafd; }
+
 /*# sourceMappingURL=styles.css.map */

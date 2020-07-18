@@ -70,18 +70,47 @@ html(lang="en")
         // founder
         section.section-outer.section-founder
             .section-inner
-                |section-founder
+                .section-founder__img
+                    img(src="img/founder.png", alt="")
+                .section-founder__content
+                    .section-founder__content-text
+                        |Content should be a journey. It should hit users at all the stages: awareness, consideration, and decision. If your content doesn’t continue to inform and be relevant, users will get turned off. A pipeline is only as good as the quality and readiness of leads.
+                    .section-founder__content-name
+                        |Andrew Bichel
+                    .section-founder__content-post
+                        |Founder, Marketing
         // / founder
         
         // plans
         section.section-outer.section-plans
-            .section-inner.
-                section-plans
+            .section-inner
+                .section-plans__title Choose your suitable plans
+                .section-plans__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                .section-plans__list
+                    .section-plans__list-item.active
+                        .section-plans__list-item_title FREE
+                        .section-plans__list-item_price 
+                            span.prefix $0
+                            span.postfix /mo
+                        .section-plans__list-item_description
+                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        .section-plans__list-item_button
+                            a(href="") Get Started
+                    .section-plans__list-item
+                        .section-plans__list-item_title PREMIUM
+                        .section-plans__list-item_price 
+                            span.prefix $39
+                            span.postfix /mo
+                        .section-plans__list-item_description
+                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        .section-plans__list-item_button
+                            a(href="") Get Started
+
         // / plans
         
         // free
         section.section-outer.section-free
-            .section-inner.
+            .section-inner
                 section-free
         // / free
         
