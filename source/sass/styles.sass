@@ -33,7 +33,31 @@ body
         font-size: 16px
         line-height: 28px
         font-weight: 300
-        color: rgb(108, 108, 108)    
+        color: rgb(108, 108, 108)
+
+@mixin start-button
+    @include font-montserrat
+
+    font-size: 16px                
+    margin: 0
+    padding: 16px 20px 
+    outline: none
+    border-radius: 4px
+    cursor: pointer 
+    text-decoration: none
+
+.btn-main
+    @include start-button
+
+    border: none
+    background: linear-gradient(to right, rgb(254, 152, 91), rgb(254, 79, 167))
+    color: $color-white   
+.btn-secondary
+    @include start-button
+
+    border: 1px solid rgb(65, 65, 65)
+    background: $color-white
+    color: rgb(65, 65, 65)
 // === / Common ===
 
 // === header ===
@@ -108,18 +132,6 @@ body
                     &::placeholder
                         color: $color-white
             &-button
-                button
-                    @include font-montserrat
-
-                    font-size: 16px                
-                    margin: 0
-                    padding: 16px 20px 
-                    border: none
-                    background: linear-gradient(to right, rgb(254, 152, 91), rgb(254, 79, 167))
-                    outline: none
-                    border-radius: 4px
-                    color: $color-white
-
 // === / header ===
 
 
@@ -236,7 +248,7 @@ body
                 font-size: 16px
                 line-height: 28px
                 font-weight: 300
-                margin-bottom: 40px
+                margin-bottom: 50px
             &_button
             
             &.active

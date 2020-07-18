@@ -25,6 +25,34 @@ body {
   font-weight: 300;
   color: #6c6c6c; }
 
+.btn-main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#fe985b), to(#fe4fa7));
+  background: -o-linear-gradient(left, #fe985b, #fe4fa7);
+  background: linear-gradient(to right, #fe985b, #fe4fa7);
+  color: #ffffff; }
+
+.btn-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 16px 20px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #414141;
+  background: #ffffff;
+  color: #414141; }
+
 .section-header {
   color: #ffffff;
   background: url("../img/bg-header.png") no-repeat 50% 50%;
@@ -111,18 +139,6 @@ body {
             color: #ffffff; }
           .section-header-wrapper__form-input input::placeholder {
             color: #ffffff; }
-      .section-header-wrapper__form-button button {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        margin: 0;
-        padding: 16px 20px;
-        border: none;
-        background: -webkit-gradient(linear, left top, right top, from(#fe985b), to(#fe4fa7));
-        background: -o-linear-gradient(left, #fe985b, #fe4fa7);
-        background: linear-gradient(to right, #fe985b, #fe4fa7);
-        outline: none;
-        border-radius: 4px;
-        color: #ffffff; }
 
 .section-promo {
   padding-top: 120px;
@@ -232,7 +248,7 @@ body {
         font-size: 16px;
         line-height: 28px;
         font-weight: 300;
-        margin-bottom: 40px; }
+        margin-bottom: 50px; }
       .section-plans__list-item.active {
         background-color: #f6fafd; }
 
