@@ -1,7 +1,7 @@
 // === Mixins ===
 @mixin font-main
     font-family: 'Lato', sans-serif
-    
+
 @mixin font-secondary
     font-family: 'Montserrat', sans-serif
 // === / Mixins ===
@@ -9,18 +9,31 @@
 // === Variables ===
 $color-white: #ffffff
 $color-main: rgb(65, 65, 65)
+
+$screen-sm: 576px
+$screen-md: 768px
+$screen-lg: 992px
+$screen-xl: 1200px
+
+$screen-sm-max: 767px
+$screen-md-max: 991px
+$screen-lg-max: 1199px
 // === / Variables ===
 
 // === Common ===
 *
     box-sizing: border-box
-      
+
 body
     @include font-main
     color: $color-main
+
 .section-outer
+    padding-right: 20px
+    padding-left: 20px
+
 .section-inner
-    width: 1180px
+    max-width: 1180px
     margin: 0 auto
 
 .description-item
@@ -171,8 +184,6 @@ body
     &__video
         flex-basis: 50%
     &__content
-        padding-right: 90px
-
         .title
             font-size: 32px
             line-height: 51px
@@ -185,6 +196,19 @@ body
         img 
             width: 100%
             height: auto
+
+    @media (max-width: $screen-sm-max)
+        flex-direction: column
+
+        &__video
+            order: -1
+            margin-bottom: 20px
+
+
+    @media (min-width: $screen-md)
+        &__content
+            padding-right: 90px
+
 .section-promo-2
     display: flex
     padding-top: 86px
@@ -288,18 +312,25 @@ body
     padding-bottom: 120px
 
     &__title
+        margin-bottom: 26px
         font-size: 66px
         line-height: 60px
         font-weight: bold
-        margin-bottom: 26px
+
     &__description
         @include font-secondary
 
+        margin: 0 auto 40px
         font-size: 20px
         line-height: 30px
-        width: 50%
-        margin: 0 auto 40px
     &__button
+
+    // @media (max-width: $screen-sm-max)
+
+    @media (min-width: $screen-md)
+        &__description
+            width: 50%
+
 // === / free === 
 
 // === footer ===
@@ -344,8 +375,10 @@ body
         justify-content: space-between
         font-size: 14px
         line-height: 18px
-        width: 60%
-        margin: 0 auto
+
+        @media (min-width: $screen-lg)
+            width: 60%
+            margin: 0 auto
 
 .helper-link
     margin: 0
