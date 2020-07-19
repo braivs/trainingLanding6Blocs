@@ -15,6 +15,7 @@ $screen-md: 768px
 $screen-lg: 992px
 $screen-xl: 1200px
 
+$screen-xs-max: 575px
 $screen-sm-max: 767px
 $screen-md-max: 991px
 $screen-lg-max: 1199px
@@ -227,9 +228,11 @@ body
 
     .section-inner
         display: flex
-
+    
     &__img
-        align-self: flex-end
+        img
+            max-width: 100%
+
     &__content
         align-self: center
         padding-left: 50px
@@ -248,6 +251,18 @@ body
         &-post
             font-size: 20px
             line-height: 29px
+    
+    @media (max-width: $screen-xs-max)
+        .section-inner
+            flex-direction: column
+
+        &__content
+            order: -1
+    
+    @media (min-width: $screen-sm)
+        &__img
+            align-self: flex-end
+
 // === / founder ====
 
 // === plans ===
@@ -327,7 +342,7 @@ body
 
     // @media (max-width: $screen-sm-max)
 
-    @media (min-width: $screen-md)
+    @media (min-width: $screen-lg)
         &__description
             width: 50%
 
@@ -376,7 +391,7 @@ body
         font-size: 14px
         line-height: 18px
 
-        @media (min-width: $screen-lg)
+        @media (min-width: $screen-xl)
             width: 60%
             margin: 0 auto
 
