@@ -148,8 +148,6 @@ body
 
             &-input
                 flex: 1
-                padding-right: 40px
-
                 input
                     @include font-secondary
 
@@ -169,9 +167,24 @@ body
                     
                     &:focus
                         background: rgba(255, 255, 255, .5)
-            &-button
-// === / header ===
+            
+            @media (min-width: $screen-sm)
+                &-input
+                    margin-right: 40px
 
+            @media (max-width: $screen-xs-max)
+                flex-direction: column
+
+                &-input
+                    margin-bottom: 10px
+
+                &-button 
+                    flex: 1
+
+                    .btn-main
+                        display: block
+                        width: 100%
+// === / header ===
 
 // === promo ===
 .section-promo
@@ -217,8 +230,15 @@ body
     border-top: 1px solid rgb(226, 226, 226)
     text-align: center
 
-    .description-item + .description-item
-        margin-left: 40px
+    @media (min-width: $screen-sm)
+        .description-item + .description-item
+            margin-left: 40px
+
+    @media (max-width: $screen-xs-max)
+        flex-direction: column
+
+        .description-item + .description-item
+            margin-top: 40px
 // === / promo ===
 
 // === founder ====
@@ -229,14 +249,7 @@ body
     .section-inner
         display: flex
     
-    &__img
-        img
-            max-width: 100%
-
     &__content
-        align-self: center
-        padding-left: 50px
-
         &-text 
             @include font-secondary
 
@@ -252,16 +265,25 @@ body
             font-size: 20px
             line-height: 29px
     
-    @media (max-width: $screen-xs-max)
+    @media (max-width: $screen-sm-max)
         .section-inner
             flex-direction: column
 
+        &__img
+            img
+                max-width: 100%
+
         &__content
             order: -1
+            margin-bottom: 40px
     
-    @media (min-width: $screen-sm)
+    @media (min-width: $screen-md)
         &__img
             align-self: flex-end
+
+        &__content
+            align-self: center
+            padding-left: 50px
 
 // === / founder ====
 
@@ -275,12 +297,13 @@ body
         font-size: 36px
         line-height: 51px
         font-weight: bold
+
     &__subtitle
+        margin-bottom: 80px
         font-size: 16px
         line-height: 28px
         font-weight: 300
-        width: 50%
-        margin: 0 auto 80px
+
     &__list
         display: flex
         justify-content: center
@@ -316,6 +339,15 @@ body
             
             &.active
                 background-color: rgb(246, 250, 253)
+
+        @media (max-width: $screen-xs-max)
+            flex-direction: column
+
+    @media (min-width: $screen-sm)
+        &__subtitle
+            width: 50%
+            margin-right: auto
+            margin-left: auto
 // === / plans ===
 
 // === free ===
@@ -323,8 +355,6 @@ body
     text-align: center
     color: $color-white
     background: linear-gradient(to right, rgb(254, 152, 91), rgb(254, 79, 167))
-    padding-top: 120px
-    padding-bottom: 120px
 
     &__title
         margin-bottom: 26px
@@ -343,8 +373,15 @@ body
     // @media (max-width: $screen-sm-max)
 
     @media (min-width: $screen-lg)
+        padding-top: 120px
+        padding-bottom: 120px
+        
         &__description
             width: 50%
+    
+    @media (max-width: $screen-md-max)
+        padding-top: 60px
+        padding-bottom: 60px
 
 // === / free === 
 
@@ -367,9 +404,6 @@ body
         list-style: none
 
         li 
-            & + li
-                margin-left: 60px
-
             a 
                 font-size: 14px
                 line-height: 20px
@@ -383,6 +417,19 @@ body
                 &:hover
                     color: rgb(254, 80, 166)
 
+        @media (max-width: $screen-xs-max)
+            flex-direction: column
+            text-align: center
+
+            li 
+                & + li
+                    margin-top: 10px
+        
+        @media (min-width: $screen-sm)
+            li 
+                & + li
+                    margin-left: 60px
+
     &__copyright_and_links
         @include font-secondary
 
@@ -394,13 +441,15 @@ body
         @media (min-width: $screen-xl)
             width: 60%
             margin: 0 auto
+        
+        @media (max-width: $screen-sm-max)
+            flex-direction: column
+            text-align: center
 
 .helper-link
     margin: 0
     padding: 0
     list-style: none
-    display: flex
-
     li
         & + li
             margin-left: 20px
@@ -410,4 +459,12 @@ body
 
             &:hover
                 text-decoration: underline
+    
+    @media (max-width: $screen-sm-max)
+        display: inline-flex
+        margin-top: 20px
+
+    @media (min-width: $screen-md)
+        display: flex
+
 // === / footer ===
