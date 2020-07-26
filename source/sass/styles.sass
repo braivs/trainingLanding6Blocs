@@ -397,33 +397,35 @@ body
         font-weight: bold
         margin-bottom: 30px
     &__nav
-        display: flex
-        justify-content: center
-        margin: 0 0 75px
-        padding: 0
-        list-style: none
+        margin-bottom: 75px
 
-        li 
-            a 
-                font-size: 14px
-                line-height: 20px
-                font-weight: bold
-                text-transform: uppercase
-                color: rgb(70, 70, 70)
-                text-decoration: none
-                transition: .2s
-
-                &.active,
-                &:hover
-                    color: rgb(254, 80, 166)
-
-        @media (max-width: $screen-xs-max)
-            flex-direction: column
-            text-align: center
-
+        &-wrapper
+            display: flex
+            justify-content: center
+            padding: 0
+            margin: 0
+            list-style: none
             li 
-                & + li
-                    margin-top: 10px
+                a 
+                    font-size: 14px
+                    line-height: 20px
+                    font-weight: bold
+                    text-transform: uppercase
+                    color: rgb(70, 70, 70)
+                    text-decoration: none
+                    transition: .2s
+
+                    &.active,
+                    &:hover
+                        color: rgb(254, 80, 166)
+
+            @media (max-width: $screen-xs-max)
+                flex-direction: column
+                text-align: center
+    
+                li 
+                    & + li
+                        margin-top: 10px
         
         @media (min-width: $screen-sm)
             li 

@@ -9,7 +9,7 @@ html(lang="en")
         link(href!="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;700&display=swap", rel="stylesheet")
     body
         //-- header --
-        section.section-outer.section-header
+        header.section-outer.section-header
             .section-inner
                 .section-header-logo Marketika
                 .section-header-content
@@ -28,111 +28,113 @@ html(lang="en")
                                     button.btn-main Get Started
         //-- / header --
         
-        //-- promo --
-        section.section-outer.section-promo
-            .section-inner
-                .section-promo-1
-                    .section-promo-1__content
-                        .title
-                            |Grow up your business with maketica maketing landing page
+        main
+            //-- promo --
+            section.section-outer.section-promo
+                .section-inner
+                    .section-promo-1
+                        .section-promo-1__content
+                            .title
+                                |Grow up your business with maketica maketing landing page
+                            .description-item
+                                .description-item__title Increase your visitors
+                                .description-item__content
+                                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            .description-item
+                                .description-item__title Increase your visitors
+                                .description-item__content
+                                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.                                
+                        .section-promo-1__video
+                            img(src="img/video.png", alt="")
+                    .section-promo-2
                         .description-item
-                            .description-item__title Increase your visitors
-                            .description-item__content
+                            .description-item__icon
+                                img(src="img/icon-idea.png", alt="")
+                            .description-item__title Start your marketing
+                            .description-item__text
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
+                        .description-item
+                            .description-item__icon
+                                img(src="img/icon-idea.png", alt="")
+                            .description-item__title Start your marketing
+                            .description-item__text
                                 |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                         .description-item
-                            .description-item__title Increase your visitors
-                            .description-item__content
-                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.                                
-                    .section-promo-1__video
-                        img(src="img/video.png", alt="")
-                .section-promo-2
-                    .description-item
-                        .description-item__icon
-                            img(src="img/icon-idea.png", alt="")
-                        .description-item__title Start your marketing
-                        .description-item__text
-                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                    .description-item
-                        .description-item__icon
-                            img(src="img/icon-idea.png", alt="")
-                        .description-item__title Start your marketing
-                        .description-item__text
-                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    .description-item
-                        .description-item__icon
-                            img(src="img/icon-idea.png", alt="")
-                        .description-item__title Start your marketing
-                        .description-item__text
-                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-
-        //-- promo --
-        
-        // founder
-        section.section-outer.section-founder
-            .section-inner
-                .section-founder__img
-                    img(src="img/founder.png", alt="")
-                .section-founder__content
-                    .section-founder__content-text
-                        |Content should be a journey. It should hit users at all the stages: awareness, consideration, and decision. If your content doesn’t continue to inform and be relevant, users will get turned off. A pipeline is only as good as the quality and readiness of leads.
-                    .section-founder__content-name
-                        |Andrew Bichel
-                    .section-founder__content-post
-                        |Founder, Marketing
-        // / founder
-        
-        // plans
-        section.section-outer.section-plans
-            .section-inner
-                .section-plans__title Choose your suitable plans
-                .section-plans__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                .section-plans__list
-                    .section-plans__list-item.active
-                        .section-plans__list-item_title FREE
-                        .section-plans__list-item_price 
-                            span.prefix $0
-                            span.postfix /mo
-                        .section-plans__list-item_description
-                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                        .section-plans__list-item_button
-                            a.btn-main(href="") Get Started
-                    .section-plans__list-item
-                        .section-plans__list-item_title PREMIUM
-                        .section-plans__list-item_price 
-                            span.prefix $39
-                            span.postfix /mo
-                        .section-plans__list-item_description
-                            |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                        .section-plans__list-item_button
-                            a.btn-secondary(href="") Get Started
-        // / plans
-        
-        // free
-        section.section-outer.section-free
-            .section-inner
-                .section-free__title It’s free, Get started today
-                .section-free__description
-                    |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                .section-free__button
-                    a.btn-free(href="") Get Started
-        // / free
+                            .description-item__icon
+                                img(src="img/icon-idea.png", alt="")
+                            .description-item__title Start your marketing
+                            .description-item__text
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    
+            //-- promo --
+            
+            // founder
+            section.section-outer.section-founder
+                .section-inner
+                    .section-founder__img
+                        img(src="img/founder.png", alt="")
+                    .section-founder__content
+                        .section-founder__content-text
+                            |Content should be a journey. It should hit users at all the stages: awareness, consideration, and decision. If your content doesn’t continue to inform and be relevant, users will get turned off. A pipeline is only as good as the quality and readiness of leads.
+                        .section-founder__content-name
+                            |Andrew Bichel
+                        .section-founder__content-post
+                            |Founder, Marketing
+            // / founder
+            
+            // plans
+            section.section-outer.section-plans
+                .section-inner
+                    .section-plans__title Choose your suitable plans
+                    .section-plans__subtitle Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .section-plans__list
+                        .section-plans__list-item.active
+                            .section-plans__list-item_title FREE
+                            .section-plans__list-item_price 
+                                span.prefix $0
+                                span.postfix /mo
+                            .section-plans__list-item_description
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            .section-plans__list-item_button
+                                a.btn-main(href="") Get Started
+                        .section-plans__list-item
+                            .section-plans__list-item_title PREMIUM
+                            .section-plans__list-item_price 
+                                span.prefix $39
+                                span.postfix /mo
+                            .section-plans__list-item_description
+                                |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            .section-plans__list-item_button
+                                a.btn-secondary(href="") Get Started
+            // / plans
+            
+            // free
+            section.section-outer.section-free
+                .section-inner
+                    .section-free__title It’s free, Get started today
+                    .section-free__description
+                        |Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    .section-free__button
+                        a.btn-free(href="") Get Started
+            // / free
         
         // footer
-        section.section-outer.section-footer
+        footer.section-outer.section-footer
             .section-inner
                 .section-footer__logo
                     |Marketika
-                ul.section-footer__nav
-                    li
-                        a(href="") About Us
-                    li
-                        a.active(href="") Services
-                    li
-                        a(href="") FAQ
-                    li
-                        a(href="") Blog
-                    li
-                        a(href="") Contact us
+                nav.section-footer__nav
+                    ul.section-footer__nav-wrapper
+                        li
+                            a(href="") About Us
+                        li
+                            a.active(href="") Services
+                        li
+                            a(href="") FAQ
+                        li
+                            a(href="") Blog
+                        li
+                            a(href="") Contact us
                 .section-footer__copyright_and_links
                     .section-footer__copyright_and_links-copyright
                         |Copyright © Sepra 2018 All Right Resereved

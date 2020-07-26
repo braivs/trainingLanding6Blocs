@@ -386,36 +386,38 @@ body {
     font-weight: bold;
     margin-bottom: 30px; }
   .section-footer__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0 0 75px;
-    padding: 0;
-    list-style: none; }
-    .section-footer__nav li a {
-      font-size: 14px;
-      line-height: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #464646;
-      text-decoration: none;
-      -webkit-transition: .2s;
-      -o-transition: .2s;
-      transition: .2s; }
-      .section-footer__nav li a.active, .section-footer__nav li a:hover {
-        color: #fe50a6; }
-    @media (max-width: 575px) {
-      .section-footer__nav {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        text-align: center; }
-        .section-footer__nav li + li {
-          margin-top: 10px; } }
+    margin-bottom: 75px; }
+    .section-footer__nav-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .section-footer__nav-wrapper li a {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #464646;
+        text-decoration: none;
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
+        .section-footer__nav-wrapper li a.active, .section-footer__nav-wrapper li a:hover {
+          color: #fe50a6; }
+      @media (max-width: 575px) {
+        .section-footer__nav-wrapper {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          text-align: center; }
+          .section-footer__nav-wrapper li + li {
+            margin-top: 10px; } }
     @media (min-width: 576px) {
       .section-footer__nav li + li {
         margin-left: 60px; } }
